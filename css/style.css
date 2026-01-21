@@ -1,0 +1,197 @@
+/* ==========================================
+   1. CONFIGURACIÓN Y VARIABLES
+   ========================================== */
+:root {
+    --rojo-gumar: #bc1b2b;
+    --rojo-hover: #961522;
+    --oscuro: #1a1a1a;
+    --gris-fondo: #f8f9fa;
+    --blanco: #ffffff;
+    --transicion: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--gris-fondo);
+    color: var(--oscuro);
+    line-height: 1.6;
+}
+
+/* ==========================================
+   2. NAVEGACIÓN
+   ========================================== */
+.navbar {
+    padding: 1rem 0;
+    transition: var(--transicion);
+}
+
+.nav-link {
+    position: relative;
+    transition: var(--transicion);
+}
+
+/* Pseudoclase para hover en menú */
+.nav-link:hover {
+    color: var(--rojo-gumar) !important;
+}
+
+/* Hero Section Personalizado */
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* ==========================================
+   3. SHOWROOM ESTÉTICO 
+   ========================================== */
+.showroom-grid {
+    display: grid;
+    /* 3 columnas iguales para PC */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.showroom-item {
+    background: var(--blanco);
+    border-radius: 12px !important;
+    overflow: hidden;
+    transition: var(--transicion);
+    border: none !important;
+}
+
+/* Efecto Elevación al pasar el mouse (Pseudoclase) */
+.showroom-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
+}
+
+/* Control del tamaño de imagen del Showroom */
+.img-wrapper {
+    height: 220px; /* Altura controlada para estética Premium */
+    width: 100%;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Evita que la imagen se estire */
+    transition: transform 0.5s ease;
+}
+
+.showroom-item:hover .img-wrapper img {
+    transform: scale(1.1);
+}
+
+/* ==========================================
+   4. COMPONENTES Y DETALLES 
+   ========================================== */
+
+/* Línea decorativa roja en títulos */
+h2.display-5::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--rojo-gumar);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+/* Botones Personalizados */
+.btn-danger {
+    background-color: var(--rojo-gumar);
+    border-color: var(--rojo-gumar);
+    border-radius: 5px;
+    padding: 12px 30px;
+    transition: var(--transicion);
+}
+
+.btn-danger:hover {
+    background-color: var(--rojo-hover);
+    border-color: var(--rojo-hover);
+    transform: scale(1.05);
+}
+
+/* WhatsApp Flotante */
+.btn-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: var(--transicion);
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.15) rotate(10deg);
+}
+
+.btn-whatsapp img {
+    width: 35px;
+}
+
+/* ==========================================
+   5. RESPONSIVE 
+   ========================================== */
+
+/* Ajuste para Tablets */
+@media (max-width: 991px) {
+    .showroom-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .display-2 {
+        font-size: 3rem;
+    }
+}
+
+/* Ajuste para Celulares (Mobile) */
+@media (max-width: 576px) {
+    .showroom-grid {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+
+    .img-wrapper {
+        height: 250px; /* Imagen un poco más grande en móvil para detalle */
+    }
+
+    .display-2 {
+        font-size: 2.2rem;
+    }
+
+    header {
+        min-height: 60vh !important;
+    }
+
+    .border-md-start, .border-md-end {
+        border: none !important;
+    }
+}
+
+/* ==========================================
+   6. UTILIDADES ADICIONALES
+   ========================================== */
+.rounded-4 { border-radius: 1.5rem !important; }
+.shadow-lg-soft { box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+

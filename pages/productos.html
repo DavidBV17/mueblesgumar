@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Completo | Muebles GUMAR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .showroom-item { cursor: pointer; transition: all 0.3s ease; }
+        .showroom-item:hover { transform: translateY(-8px); box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; }
+        
+        /* Ajuste para que las imágenes del contenedor no sean gigantes */
+        .img-wrapper {
+            height: 250px; 
+            overflow: hidden;
+        }
+        .img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Ajuste para las imágenes dentro del modal */
+        .modal-body img {
+            max-height: 450px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .modal-content { border: none; border-radius: 20px; overflow: hidden; }
+        .list-details { list-style: none; padding: 0; font-size: 0.9rem; }
+        .list-details li { margin-bottom: 8px; color: #666; }
+        .list-details li strong { color: #333; }
+    </style>
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">GUMAR<span class="text-danger">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase small fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reparaciones.html">Reparaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-white py-5 border-bottom mb-5 shadow-sm">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Nuestra <span class="text-danger">Colección</span></h1>
+            <p class="text-muted">Calidad premium directo de nuestra fábrica en Medellín. Haz clic en un producto para ver sus detalles.</p>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+        
+        <div class="mb-5">
+            <h3 class="fw-bold mb-4 border-start border-danger border-4 ps-3">Salas y Sofás</h3>
+            <div class="showroom-grid">
+                <div class="showroom-item card border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#m1">
+                    <div class="img-wrapper"><img src="../img/sala-caracol.jpeg" alt="Sala Caracol"></div>
+                    <div class="card-body text-center p-3">
+                        <h6 class="fw-bold mb-1">Sala Caracol</h6>
+                        <p class="text-danger small fw-bold mb-0">$1.850.000</p>
+                    </div>
+                </div>
+                <div class="showroom-item card border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#m2">
+                    <div class="img-wrapper"><img src="../img/sala-espiral.jpeg" alt="Sala Espiral"></div>
+                    <div class="card-body text-center p-3">
+                        <h6 class="fw-bold mb-1">Sala Espiral</h6>
+                        <p class="text-danger small fw-bold mb-0">$1.650.000</p>
+                    </div>
+                </div>
+                <div class="showroom-item card border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#m3">
+                    <div class="img-wrapper"><img src="../img/sala-doblepuff.jpeg" alt="Sala Doble Puff"></div>
+                    <div class="card-body text-center p-3">
+                        <h6 class="fw-bold mb-1">Sala Doble Puff</h6>
+                        <p class="text-danger small fw-bold mb-0">$1.450.000</p>
+                    </div>
+                </div>
+                <div class="showroom-item card border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#m4">
+                    <div class="img-wrapper"><img src="../img/sala-clickclack.jpeg" alt="sala Click Clack"></div>
+                    <div class="card-body text-center p-3">
+                        <h6 class="fw-bold mb-1">Sala Click Clack</h6>
+                        <p class="text-danger small fw-bold mb-0">$950.000</p>
+                    </div>
+                </div>
+                <div class="showroom-item card border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#m5">
+                    <div class="img-wrapper"><img src="../img/sala-omega.jpeg" alt="Sala Omega"></div>
+                    <div class="card-body text-center p-3">
+                        <h6 class="fw-bold mb-1">Sala Omega</h6>
+                        <p class="text-danger small fw-bold mb-0">$1.980.000</p>
+                    </div>
+                </div>
+                <div class="showroom-item card border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#m6">
+                    <div class="img-wrapper"><img src="../img/sala-paris.jpeg" alt="Sala Paris"></div>
+                    <div class="card-body text-center p-3">
+                        <h6 class="fw-bold mb-1">Sala Paris</h6>
+                        <p class="text-danger small fw-bold mb-0">$2.100.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h3 class="fw-bold mb-4 border-start border-danger border-4 ps-3">Comedores</h3>
+            <div class="showroom-grid">
+                <div class="showroom-item card border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#m7">
+                    <div class="img-wrapper"><img src="../img/comedor-dubai.jpeg" alt="Comedor Dubai"></div>
+                    <div class="card-body text-center p-3">
+                        <h6 class="fw-bold mb-1">Comedor Dubai</h6>
+                        <p class="text-danger small fw-bold mb-0">$2.100.000</p>
+                    </div>
+                </div>
+                <div class="showroom-item card border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#m8">
+                    <div class="img-wrapper"><img src="../img/comedor-ahorraespacio.jpeg" alt="Comedor Ahorra Espacio"></div>
+                    <div class="card-body text-center p-3">
+                        <h6 class="fw-bold mb-1">Ahorra Espacio</h6>
+                        <p class="text-danger small fw-bold mb-0">$1.150.000</p>
+                    </div>
+                </div>
+                <div class="showroom-item card border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#m9">
+                    <div class="img-wrapper"><img src="../img/comedor-arlequin.jpeg" alt="Comedor Arlequin"></div>
+                    <div class="card-body text-center p-3">
+                        <h6 class="fw-bold mb-1">Comedor Arlequín</h6>
+                        <p class="text-danger small fw-bold mb-0">$1.700.000</p>
+                    </div>
+                </div>
+                <div class="showroom-item card border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#m10">
+                    <div class="img-wrapper"><img src="../img/comedor-irlandes.jpeg" alt="Comedor Irlandes"></div>
+                    <div class="card-body text-center p-3">
+                        <h6 class="fw-bold mb-1">Comedor Irlandés</h6>
+                        <p class="text-danger small fw-bold mb-0">$2.300.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h3 class="fw-bold mb-4 border-start border-danger border-4 ps-3">Línea Infantil y Dormitorio</h3>
+            <div class="showroom-grid">
+                <div class="showroom-item card border-0 shadow-sm" style="max-width: 400px;" data-bs-toggle="modal" data-bs-target="#m11">
+                    <div class="img-wrapper"><img src="../img/camarote-sencillo.jpeg" alt="Camarote Sencillo"></div>
+                    <div class="card-body text-center p-3">
+                        <h6 class="fw-bold mb-1">Camarote Sencillo</h6>
+                        <p class="text-danger small fw-bold mb-0">$850.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="m1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg">
+                <div class="modal-body p-0 text-start">
+                    <img src="../img/sala-caracol.jpeg" class="img-fluid w-100 mb-3" alt="Sala Caracol">
+                    <div class="px-4 pb-4">
+                        <h4 class="fw-bold">Sala Caracol</h4>
+                        <p class="text-danger fw-bold h5">$1.850.000</p>
+                        <hr>
+                        <p class="text-muted small">Diseño curvo exclusivo que optimiza el espacio y brinda un aire moderno. Incluye cojines decorativos.</p>
+                        <ul class="list-details">
+                            <li><strong>Madera:</strong> Cedro Inmunizado (Antipolilla).</li>
+                            <li><strong>Tela:</strong> Microfibra Antifluidos / Lona Premium.</li>
+                            <li><strong>Espuma:</strong> Alta densidad (D-26) para confort duradero.</li>
+                        </ul>
+                        <a href="https://wa.me/573128505118?text=Hola!%20Me%20interesa%20la%20Sala%20Caracol" class="btn btn-danger w-100 fw-bold py-2 mt-2">COTIZAR POR WHATSAPP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="m2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg">
+                <div class="modal-body p-0 text-start">
+                    <img src="../img/sala-espiral.jpeg" class="img-fluid w-100 mb-3" alt="Sala Espiral">
+                    <div class="px-4 pb-4">
+                        <h4 class="fw-bold">Sala Espiral</h4>
+                        <p class="text-danger fw-bold h5">$1.650.000</p>
+                        <hr>
+                        <p class="text-muted small">Sofá modular con diseño minimalista. Perfecto para apartamentos compactos con estilo.</p>
+                        <ul class="list-details">
+                            <li><strong>Madera:</strong> Pino Pátula seleccionado.</li>
+                            <li><strong>Acabado:</strong> Patas metálicas / madera opcional.</li>
+                        </ul>
+                        <a href="https://wa.me/573128505118?text=Hola!%20Me%20interesa%20la%20Sala%20Espiral" class="btn btn-danger w-100 fw-bold py-2 mt-2">COTIZAR POR WHATSAPP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="m3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg">
+                <div class="modal-body p-0 text-start">
+                    <img src="../img/sala-doblepuff.jpeg" class="img-fluid w-100 mb-3" alt="Doble Puff">
+                    <div class="px-4 pb-4">
+                        <h4 class="fw-bold">Sala Doble Puff</h4>
+                        <p class="text-danger fw-bold h5">$1.450.000</p>
+                        <hr>
+                        <p class="text-muted small">Sala versátil que incluye dos puffs auxiliares ocultos para recibir más invitados.</p>
+                        <ul class="list-details">
+                            <li><strong>Incluye:</strong> Sofá L + 2 Puffs.</li>
+                            <li><strong>Tapizado:</strong> Tela tipo lino de alto tráfico.</li>
+                        </ul>
+                        <a href="https://wa.me/573128505118?text=Hola!%20Me%20interesa%20la%20Sala%20Doble%20Puff" class="btn btn-danger w-100 fw-bold py-2 mt-2">COTIZAR POR WHATSAPP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="m4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg">
+                <div class="modal-body p-0 text-start">
+                    <img src="../img/sala-clickclack.jpeg" class="img-fluid w-100 mb-3" alt="Click Clack">
+                    <div class="px-4 pb-4">
+                        <h4 class="fw-bold">Sofá Cama Click Clack</h4>
+                        <p class="text-danger fw-bold h5">$950.000</p>
+                        <hr>
+                        <p class="text-muted small">Tres posiciones: Sentado, reclinado y cama. Herraje metálico reforzado.</p>
+                        <ul class="list-details">
+                            <li><strong>Medida Cama:</strong> 1.10m x 1.80m.</li>
+                            <li><strong>Mecanismo:</strong> Acero galvanizado.</li>
+                        </ul>
+                        <a href="https://wa.me/573128505118?text=Hola!%20Me%20interesa%20el%20Sofacama%20Click%20Clack" class="btn btn-danger w-100 fw-bold py-2 mt-2">COTIZAR POR WHATSAPP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="m5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg">
+                <div class="modal-body p-0 text-start">
+                    <img src="../img/sala-omega.jpeg" class="img-fluid w-100 mb-3" alt="Sala Omega">
+                    <div class="px-4 pb-4">
+                        <h4 class="fw-bold">Sala Omega Premium</h4>
+                        <p class="text-danger fw-bold h5">$1.980.000</p>
+                        <hr>
+                        <p class="text-muted small">Línea de lujo con capitoneado artesanal y espumas de confort superior.</p>
+                        <ul class="list-details">
+                            <li><strong>Madera:</strong> Cedro.</li>
+                            <li><strong>Cojines:</strong> Siliconados de alta recuperación.</li>
+                        </ul>
+                        <a href="https://wa.me/573128505118?text=Hola!%20Me%20interesa%20la%20Sala%20Omega" class="btn btn-danger w-100 fw-bold py-2 mt-2">COTIZAR POR WHATSAPP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="m6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg">
+                <div class="modal-body p-0 text-start">
+                    <img src="../img/sala-paris.jpeg" class="img-fluid w-100 mb-3" alt="Sala Paris">
+                    <div class="px-4 pb-4">
+                        <h4 class="fw-bold">Sala Paris</h4>
+                        <p class="text-danger fw-bold h5">$2.100.000</p>
+                        <hr>
+                        <p class="text-muted small">Elegancia clásica con materiales modernos. Brazos acolchados y gran amplitud.</p>
+                        <a href="https://wa.me/573128505118?text=Hola!%20Me%20interesa%20la%20Sala%20Paris" class="btn btn-danger w-100 fw-bold py-2 mt-2">COTIZAR POR WHATSAPP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="m7" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg">
+                <div class="modal-body p-0 text-start">
+                    <img src="../img/comedor-dubai.jpeg" class="img-fluid w-100 mb-3" alt="Comedor Dubai">
+                    <div class="px-4 pb-4">
+                        <h4 class="fw-bold">Comedor Dubai</h4>
+                        <p class="text-danger fw-bold h5">$2.100.000</p>
+                        <hr>
+                        <p class="text-muted small">Estructura robusta en madera maciza con sillas ergonómicas de alto confort.</p>
+                        <ul class="list-details">
+                            <li><strong>Mesa:</strong> Madera Roble / Vidrio 10mm.</li>
+                            <li><strong>Sillas:</strong> 4 - 6 puestos disponibles.</li>
+                        </ul>
+                        <a href="https://wa.me/573128505118?text=Hola!%20Me%20interesa%20el%20Comedor%20Dubai" class="btn btn-danger w-100 fw-bold py-2 mt-2">COTIZAR POR WHATSAPP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="m8" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg">
+                <div class="modal-body p-0 text-start">
+                    <img src="../img/comedor-ahorraespacio.jpeg" class="img-fluid w-100 mb-3" alt="Comedor Ahorra Espacio">
+                    <div class="px-4 pb-4">
+                        <h4 class="fw-bold">Comedor Ahorra Espacio</h4>
+                        <p class="text-danger fw-bold h5">$1.150.000</p>
+                        <hr>
+                        <p class="text-muted small">Ideal para apartamentos pequeños. Las sillas encajan perfectamente bajo la mesa.</p>
+                        <a href="https://wa.me/573128505118?text=Hola!%20Me%20interesa%20el%20Comedor%20Ahorra%20Espacio" class="btn btn-danger w-100 fw-bold py-2 mt-2">COTIZAR POR WHATSAPP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="m9" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg">
+                <div class="modal-body p-0 text-start">
+                    <img src="../img/comedor-arlequin.jpeg" class="img-fluid w-100 mb-3" alt="Comedor Arlequín">
+                    <div class="px-4 pb-4">
+                        <h4 class="fw-bold">Comedor Arlequín</h4>
+                        <p class="text-danger fw-bold h5">$1.700.000</p>
+                        <hr>
+                        <p class="text-muted small">Juego de colores y texturas que dan vida a tu comedor. Muy resistente.</p>
+                        <a href="https://wa.me/573128505118?text=Hola!%20Me%20interesa%20el%20Comedor%20Arlequin" class="btn btn-danger w-100 fw-bold py-2 mt-2">COTIZAR POR WHATSAPP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="m10" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg">
+                <div class="modal-body p-0 text-start">
+                    <img src="../img/comedor-irlandes.jpeg" class="img-fluid w-100 mb-3" alt="Comedor Irlandés">
+                    <div class="px-4 pb-4">
+                        <h4 class="fw-bold">Comedor Irlandés</h4>
+                        <p class="text-danger fw-bold h5">$2.300.000</p>
+                        <hr>
+                        <p class="text-muted small">Diseño señorial en maderas oscuras. Acabados de alto brillo.</p>
+                        <a href="https://wa.me/573128505118?text=Hola!%20Me%20interesa%20el%20Comedor%20Irlandes" class="btn btn-danger w-100 fw-bold py-2 mt-2">COTIZAR POR WHATSAPP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="m11" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg">
+                <div class="modal-body p-0 text-start">
+                    <img src="../img/camarote-sencillo.jpeg" class="img-fluid w-100 mb-3" alt="Camarote">
+                    <div class="px-4 pb-4">
+                        <h4 class="fw-bold">Camarote Sencillo</h4>
+                        <p class="text-danger fw-bold h5">$850.000</p>
+                        <hr>
+                        <p class="text-muted small">Estructura reforzada en madera sólida. Incluye barandas de seguridad y escalera.</p>
+                        <ul class="list-details">
+                            <li><strong>Madera:</strong> Pino de alta calidad.</li>
+                            <li><strong>Desarmable:</strong> Sí, fácil transporte.</li>
+                        </ul>
+                        <a href="https://wa.me/573128505118?text=Hola!%20Me%20interesa%20el%20Camarote%20Sencillo" class="btn btn-danger w-100 fw-bold py-2 mt-2">COTIZAR POR WHATSAPP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container text-center">
+            <h4 class="fw-bold mb-3">MUEBLES <span class="text-danger">GUMAR</span></h4>
+            <p class="small text-secondary">Medellín, Colombia &copy; 2026</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/573128505118" class="btn-whatsapp" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
