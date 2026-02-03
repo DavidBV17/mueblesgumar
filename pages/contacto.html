@@ -30,24 +30,24 @@
         </div>
     </nav>
 
-    <main class="container py-5">
+    <main class="container py-5 section-contacto">
         <div class="text-center mb-5">
-            <h1 class="fw-bold">Hablemos de tu <span class="text-danger">Próximo Mueble</span></h1>
+            <h1 class="fw-bold display-5">Hablemos de tu <span class="text-danger">Próximo Mueble</span></h1>
             <p class="text-muted">Cotiza en línea o visítanos en nuestro punto de fábrica.</p>
         </div>
 
         <div class="row g-4 justify-content-center">
             
             <div class="col-lg-4">
-                <div class="card border-0 shadow-sm p-4 h-100 rounded-4">
+                <div class="card card-contacto h-100">
                     <h5 class="fw-bold mb-4">Datos de Contacto</h5>
                     
                     <div class="mb-3">
                         <small class="text-danger fw-bold text-uppercase d-block mb-1">Ubicación</small>
                         <p class="mb-2">Medellín, Antioquia</p>
-                        <div class="rounded-3 overflow-hidden shadow-sm mb-3" style="height: 180px;">
+                        <div class="map-container shadow-sm mb-3">
                             <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2483645391696!2d-75.5888!3d6.2309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTMnNTEuMiJOIDc1wrAzNScxOS43Ilc!5e0!3m2!1ses!2sco!4v1700000000000" 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.039233633215!2d-75.5888!3d6.2308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429aaa!2sMedellin%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1620000000000!5m2!1ses!2sco" 
                                 width="100%" 
                                 height="100%" 
                                 style="border:0;" 
@@ -70,20 +70,21 @@
             </div>
 
             <div class="col-lg-7">
-                <div class="card border-0 shadow-sm p-4 p-md-5 h-100 rounded-4">
+                <div class="card card-contacto h-100 p-md-5">
                     <h5 class="fw-bold mb-4">Enviar Mensaje</h5>
-                    <form action="https://formsubmit.co/TU_CORREO_AQUÍ" method="POST"> <div class="row g-3">
+                    <form action="https://formsubmit.co/TU_CORREO_AQUÍ" method="POST"> 
+                        <div class="row g-3">
                             <div class="col-md-6">
                                 <label class="form-label small fw-bold">Nombre Completo</label>
-                                <input type="text" name="name" class="form-control bg-light border-0 py-2" placeholder="Ej: Juan Pérez" required>
+                                <input type="text" name="name" class="form-control" placeholder="Ej: Juan Pérez" required>
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label small fw-bold">Número de Celular</label>
-                                <input type="text" name="phone" class="form-control bg-light border-0 py-2" placeholder="300 123..." required>
+                                <input type="text" name="phone" class="form-control" placeholder="300 123..." required>
                             </div>
                             <div class="col-12">
                                 <label class="form-label small fw-bold">¿Qué buscas?</label>
-                                <select name="category" class="form-select bg-light border-0 py-2">
+                                <select name="category" class="form-select">
                                     <option selected disabled>Selecciona una categoría</option>
                                     <option>Salas Modernas</option>
                                     <option>Comedores Premium</option>
@@ -93,7 +94,7 @@
                             </div>
                             <div class="col-12">
                                 <label class="form-label small fw-bold">Detalles de tu pedido</label>
-                                <textarea name="message" class="form-control bg-light border-0" rows="4" placeholder="Cuéntanos medidas, colores o materiales de interés..."></textarea>
+                                <textarea name="message" class="form-control" rows="4" placeholder="Cuéntanos medidas, colores o materiales de interés..."></textarea>
                             </div>
                             <div class="col-12 mt-4">
                                 <button type="submit" class="btn btn-danger w-100 py-3 fw-bold shadow-sm">ENVIAR COTIZACIÓN AHORA</button>

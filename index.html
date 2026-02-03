@@ -30,8 +30,7 @@
         </div>
     </nav>
 
-    <header class="py-5 text-center text-white"
-        style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/mueble-referencia.jpeg'); background-size: cover; background-position: center; min-height: 80vh; display: flex; align-items: center;">
+    <header class="hero-home text-center text-white">
         <div class="container">
             <h1 class="display-2 fw-bold mb-3">Tu hogar merece lo <span class="text-danger">mejor</span></h1>
             <p class="lead mb-5 px-md-5">Fabricamos muebles de alta calidad que combinan la tradición artesanal con el diseño moderno.</p>
@@ -62,65 +61,56 @@
     </section>
 
     <section class="container my-5 py-5">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold display-5">Showroom <span class="text-danger">GUMAR</span></h2>
-            <p class="text-muted">Inspiración para cada rincón de tu casa</p>
+    <div class="text-center mb-5">
+        <h2 class="fw-bold display-5">Showroom <span class="text-danger">GUMAR</span></h2>
+        <p class="text-muted">Inspiración para cada rincón de tu casa</p>
+    </div>
+
+    <div id="carouselGumar" class="carousel slide carousel-fade shadow-lg" data-bs-ride="carousel">
+        
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselGumar" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselGumar" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselGumar" data-bs-slide-to="2"></button>
         </div>
 
-        <div class="showroom-grid">
-            <div class="showroom-item card border-0 shadow-sm">
-                <div class="img-wrapper"><img src="img/sala-caracol.jpeg" alt="Sala Caracol"></div>
-                <div class="card-body">
-                    <h5 class="fw-bold">Sala Caracol</h5>
-                    <p class="text-danger fw-bold">$1.850.000</p>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="img/sala-caracol.jpeg" class="d-block w-100 carrusel-img" alt="Sala Caracol">
+                <div class="carousel-caption">
+                    <h3 class="fw-bold">Sala Caracol</h3>
+                    <p class="h5 text-danger fw-bold">$1.850.000</p>
+                    <a href="pages/productos.html" class="btn btn-danger btn-sm mt-2">Ver Producto</a>
                 </div>
             </div>
-            <div class="showroom-item card border-0 shadow-sm">
-                <div class="img-wrapper"><img src="img/comedor-dubai.jpeg" alt="Comedor Dubai"></div>
-                <div class="card-body">
-                    <h5 class="fw-bold">Comedor Dubai</h5>
-                    <p class="text-danger fw-bold">$2.100.000</p>
-                </div>
-            </div>
-            <div class="showroom-item card border-0 shadow-sm">
-                <div class="img-wrapper"><img src="img/sala-espiral.jpeg" alt="Sala Espiral"></div>
-                <div class="card-body">
-                    <h5 class="fw-bold">Sala Espiral</h5>
-                    <p class="text-danger fw-bold">$1.650.000</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="bg-white py-5">
-        <div class="container">
-            <div class="row align-items-center g-5 flex-row-reverse">
-                <div class="col-lg-6">
-                    <img src="img/tapizado-verde.jpeg" class="img-fluid rounded-4 shadow-lg" alt="Reparación Gumar">
-                </div>
-                <div class="col-lg-6">
-                    <h6 class="text-danger fw-bold text-uppercase">¿Muebles desgastados?</h6>
-                    <h2 class="display-5 fw-bold mb-4">Servicio de <span class="text-danger">Retapizado</span></h2>
-                    <p class="text-muted mb-4">No te deshagas de tu mueble favorito. Le devolvemos la vida con materiales de alta calidad y acabados de lujo. Somos expertos en transformar lo antiguo en algo totalmente nuevo.</p>
-                    <a href="pages/reparaciones.html" class="btn btn-danger px-4 py-2 fw-bold">Ver Transformaciones</a>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="img/comedor-dubai.jpeg" class="d-block w-100 carrusel-img" alt="Comedor Dubai">
+                <div class="carousel-caption">
+                    <h3 class="fw-bold">Comedor Dubai</h3>
+                    <p class="h5 text-danger fw-bold">$2.100.000</p>
+                    <a href="pages/productos.html" class="btn btn-danger btn-sm mt-2">Ver Producto</a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="container my-5 py-5">
-        <div class="row align-items-center g-5">
-            <div class="col-lg-6">
-                <img src="img/taller-gumar.jpeg" class="img-fluid rounded-4 shadow-lg" alt="Taller Gumar">
-            </div>
-            <div class="col-lg-6">
-                <h6 class="text-danger fw-bold text-uppercase">Tradición en Medellín</h6>
-                <h2 class="display-5 fw-bold mb-4">Maestros del Confort</h2>
-                <p class="text-muted mb-4">En Muebles GUMAR fabricamos directamente cada pieza, asegurando acabados impecables y durabilidad extrema.</p>
-                <a href="pages/nosotros.html" class="btn btn-dark px-4 py-2">Nuestra Historia</a>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="img/sala-espiral.jpeg" class="d-block w-100 carrusel-img" alt="Sala Espiral">
+                <div class="carousel-caption">
+                    <h3 class="fw-bold">Sala Espiral</h3>
+                    <p class="h5 text-danger fw-bold">$1.650.000</p>
+                    <a href="pages/productos.html" class="btn btn-danger btn-sm mt-2">Ver Producto</a>
+                </div>
             </div>
         </div>
-    </section>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGumar" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselGumar" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</section>
 
     <footer class="bg-dark text-white py-5">
         <div class="container text-center">
